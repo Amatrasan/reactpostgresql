@@ -1,0 +1,1 @@
+global.postgree = require('./postgree');

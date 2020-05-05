@@ -1,0 +1,23 @@
+
+
+.newWorker{
+    border-radius: 2vh;
+    padding: 0 2% 0.5rem 2%;
+    position: absolute;
+    top: 5%;
+    width: 40%;
+    height: auto;
+    box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.295);
+    background-color: #f9f9fd;
+    text-align: center;
+    left: 28%;
+}
+.newWorker > div{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 150%;
+}
+.newWorker > button{
+    margin-top: 3%;
+}
+

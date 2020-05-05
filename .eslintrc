@@ -1,0 +1,86 @@
+{
+  "env": {
+      "browser": true,
+      "es6": true,
+      "node": true,
+      "commonjs": true,
+      "mongo": true
+  },
+  "extends": [
+      "airbnb",
+      "plugin:jsx-a11y/recommended"
+  ],
+  "globals": {
+      "Atomics": "readonly",
+      "SharedArrayBuffer": "readonly"
+  },
+  "parserOptions": {
+      "ecmaFeatures": {
+          "jsx": true,
+          "js": true
+      },
+      "ecmaVersion": 2018,
+      "sourceType": "module",
+      "allowImportExportEverywhere": true
+  },
+  "plugins": [
+      "react",
+      "jsx-a11y"
+  ],
+  "rules": {
+      "no-prototype-builtins": "off",
+      "no-async-promise-executor": "off",
+      "no-redeclare": "off",
+      "no-unused-vars": "warn",
+      "linebreak-style": "off",
+      "indent": "off",
+      "keyword-spacing": "off",
+      "nonblock-statement-body-position": "off",
+      "curly": "off",
+      "no-underscore-dangle": "off",
+      "one-var": "warn",
+      "no-var": "off",
+      "vars-on-top": "off",
+      "block-scoped-var": "off",
+      "no-return-await": "off",
+      "no-restricted-syntax": "off",
+      "no-param-reassign": "off",
+      "max-len": "off",
+      "arrow-parens": "off",
+      "default-case": "off",
+      "no-plusplus": "off",
+      "prefer-destructuring": "off",
+      "no-console": "off",
+      "consistent-return": "off",
+      "global-require": "off",
+      "no-await-in-loop": "off",
+      "no-continue": "off",
+      "no-tabs": "off",
+      "camelcase": "warn",
+      "no-else-return": "off",
+      "prefer-object-spread": "off",
+      "prefer-const": "warn",
+      "no-nested-ternary": "off",
+      "no-shadow": "off",
+      "import/no-unresolved": "off",
+      "prefer-rest-params": "off",
+      "no-loop-func": "off",
+      "object-shorthand": "off",
+      "newline-per-chained-call": "off",
+      "import/first": "off",
+      "object-curly-newline": "off",
+      "no-use-extend-native/no-use-extend-native": "off",
+      "security/detect-non-literal-fs-filename": "off",
+      "security/detect-non-literal-require": "off",
+      "array-func/prefer-array-from": "off",
+      "import/dynamic-import-chunkname": "warn",
+      "import/no-named-as-default-member": "off",
+      "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+      "react/jsx-indent" : "off",
+      "react/jsx-indent-props": "off",
+      "react/no-unescaped-entities": "off",
+      "jsx-a11y/click-events-have-key-events": "off",
+      "jsx-a11y/interactive-supports-focus": "off",
+      "react/destructuring-assignment": "off"
+  }
+}
