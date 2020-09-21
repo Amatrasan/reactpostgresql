@@ -56,7 +56,7 @@ const Landing = (props) => {
                     FetchData();
                     fetchEffect();
                 }
-            }, 2000)
+            }, 20000)
         }
         fetchEffect();
         return () => cleanupFunction = true;

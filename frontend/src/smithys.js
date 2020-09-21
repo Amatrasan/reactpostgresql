@@ -47,7 +47,7 @@ const Smithys = () => {
             ).catch((err) => {});
     }
     useEffect(() => {
-        setInterval(FetchData, 1000);
+        setInterval(FetchData, 10000);
     }, []);
     const createNewSmithy = () => {
         setOpen(!openState);

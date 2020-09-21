@@ -39,13 +39,13 @@ module.exports = {
     select: (columns, tables, cond) => new Promise(async (resolve, reject) => {
         let t = '';
         t = cond || '';
-        console.log(t);
-        console.log(columns);
-        console.log(tables);
         try {
+            console.log('select start')
             const response = await db.manyOrNone(`SELECT ${columns} FROM ${tables} ${t}`);
+            console.log('select end', response)
             resolve(response);
         } catch (error) {
+            console.log('select error', error)
             reject(error);
         }
     }),
@@ -62,14 +62,12 @@ module.exports = {
             try {
                 await db.none(`INSERT INTO ${table}(${data.columns}) VALUES (${data.values})`);
             } catch (error) {
-                console.log('insert into error', error);
                 reject(error);
             }
 
             resolve(true);
         } catch (error) {
             reject(error);
-            console.log('insert types', error);
         }
     }),
 
@@ -89,15 +87,13 @@ module.exports = {
 
 
             try {
-                await db.none(`DELETE FROM ${table} ${cond !== '' ? 'WHERE' : ''} ${cond}`).then(data => console.log('delete from'));
+                await db.none(`DELETE FROM ${table} ${cond !== '' ? 'WHERE' : ''} ${cond}`).then(data => console.log('delete from', data));
             } catch (error) {
-                console.log(error);
                 reject(error);
             }
 
             resolve(true);
         } catch (error) {
-            console.log('123');
             reject(error);
         }
     }),
@@ -115,11 +111,9 @@ module.exports = {
             assert.strictEqual(typeof table, 'string');
             assert.strictEqual(typeof values, 'string');
             assert.strictEqual(typeof cond, 'string');
-            console.log(`UPDATE ${table} SET ${values} ${cond !== '' ? 'WHERE' : ''} ${cond}`);
             try {
                 await db.none(`UPDATE ${table} SET ${values} ${cond !== '' ? 'WHERE' : ''} ${cond}`);
             } catch (error) {
-                console.log('update', error);
                 reject(error);
             }
 
