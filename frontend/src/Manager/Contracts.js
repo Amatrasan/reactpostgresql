@@ -5,7 +5,6 @@ const Contracts = (props) => {
     const [dataContract, setData] = useState([]);
     useEffect(() =>{setData(props.contracts)}, [props])
     const eachContract = (data, i) => {
-        console.log(data)
         const accept = (bool) => {
             let where = `idcontract = ${data.idcontract}`;
             let values = `cost = '${data.cost}', worker = '${props.id}', status = '${bool ? 'Принято' : 'Отклонено'}'`;

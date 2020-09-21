@@ -8,8 +8,8 @@ const routers = require('../routes');
 const app = express();
 
 app.use(cors({ origin: '*' }));
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json({ limit: '150mb' }));
+app.use(bodyParser.urlencoded({ limit: '150mb', extended: true, parameterLimit: 150000 }));
 app.use(cookieParser());
 
 app.use('/', routers.main);

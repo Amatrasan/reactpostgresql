@@ -24,16 +24,14 @@ const Manager = (props) => {
         let id = getId();
           // let id = 71;
         setId(id);
-        let res = await axios.post('http://localhost:8000/select', { columns: '*', tables: 'contract', cond: `left join deliverycompany on deliverycompany.idcompany = contract.delivery left join customer on contract.customer = customer.idcustomer where worker=${id} or worker is null` });
+        let res = await axios.post('http://localhost:8000/select', { columns: 'idcontract, contract.cost, image, startdate, enddate, lasttname, firstname, middletname, name, description, status', tables: 'contract', cond: `left join deliverycompany on deliverycompany.idcompany = contract.delivery left join customer on contract.customer = customer.idcustomer where worker=${id} or worker is null` });
         setContracts(res.data.return);
     }
     useEffect(() => {
         const fetchManager = async () => {
             let id = getId();
-           //let id = 71;
            setId(id)
-            console.log(id)
-            let res = await axios.post('http://localhost:8000/select', { columns: '*', tables: 'contract', cond: `left join deliverycompany on deliverycompany.idcompany = contract.delivery left join customer on contract.customer = customer.idcustomer where worker=${id} or worker is null` });
+            let res = await axios.post('http://localhost:8000/select', { columns: 'idcontract, contract.cost, image, startdate, enddate, lasttname, firstname, middletname, name, description, status', tables: 'contract', cond: `left join deliverycompany on deliverycompany.idcompany = contract.delivery left join customer on contract.customer = customer.idcustomer where worker=${id} or worker is null` });
             setContracts(res.data.return);
         }
         fetchManager();

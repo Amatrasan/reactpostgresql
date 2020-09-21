@@ -106,7 +106,6 @@ const Employers = () => {
         setOpen(!openState);
         let where = `idworker = ${id}`;
         let values = `firstname = '${firstname}', middletname = '${middletname}', lasttname = '${lasttname}', positioninjob = '${positioninjob}', adres = '${adres}', telephone = '${telephone}', birthdate = '${birthdate}', login = '${login}', password = '${password}'`;
-        console.log(values);
         axios.post('http://localhost:8000/update', { table: 'worker', values: values, cond: where })
             .then(async (req, res) => {
                 }

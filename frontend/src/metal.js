@@ -34,6 +34,8 @@ const showSmithy = (i, data, FetchData, setModify, setName, setDescription, setC
     )
 };
 
+let timer
+
 const Metal = () => {
     const [data, setData] = useState([]);
     const [name, setName] = useState('');
@@ -50,7 +52,8 @@ const Metal = () => {
             ).catch((err) => {});
     }
     useEffect(() => {
-        setInterval(FetchData, 1000);
+        timer = setInterval(FetchData, 5000);
+        return () => clearInterval(timer)
     }, []);
     const createNewMetal = () => {
         setOpen(!openState);

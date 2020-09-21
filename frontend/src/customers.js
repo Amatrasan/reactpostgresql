@@ -40,6 +40,8 @@ const showHuman = (index, data, FetchData, setModify, setFirstname, setMiddletna
     )
 };
 
+let timer
+
 const Customers = () => {
     const [data, setData] = useState([]);
     const [openState, setOpen] = useState(false);
@@ -59,7 +61,8 @@ const Customers = () => {
             ).catch((err) => {});
     };
     useEffect(() => {
-        setInterval(FetchData, 1000);
+        timer = setInterval(FetchData, 5000);
+        return () => clearInterval(timer)
     }, []);
     const createNewWorker = () => {
         setOpen(!openState);

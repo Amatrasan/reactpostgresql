@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import axios from 'axios';
 
+let timer
+
 const showSmithy = (i, data, FetchData, setModify, setName, setAdres, setOpen, openState, setId) => {
     const del = () => {
         axios.post('http://localhost:8000/delete', { table: 'smithy', where: `idsmithy=${data.idsmithy}` })
@@ -47,7 +49,8 @@ const Smithys = () => {
             ).catch((err) => {});
     }
     useEffect(() => {
-        setInterval(FetchData, 10000);
+        timer = setInterval(FetchData, 5000);
+        return () => clearInterval(timer)
     }, []);
     const createNewSmithy = () => {
         setOpen(!openState);

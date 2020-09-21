@@ -15,7 +15,6 @@ const Orders = (props) => {
                 }
             ).catch((err) => {});
     };
-    console.log(Orders);
     const FetchSmith = async () => {
         await axios.post('http://localhost:8000/select', { columns: '*', tables: 'worker', cond: `where UPPER(positioninjob) LIKE UPPER('кузнец')`})
         .then((req, res) => {
@@ -55,8 +54,11 @@ const Orders = (props) => {
                 }
         ).catch((err) => {});
         setOpen(false);
-        FetchWorkers();
-        FetchData();
+        setTimeout(() => {
+            FetchWorkers();
+            FetchData();
+        }, 1000)
+
     }
     const getSmith = (ids) => {
         let res = Workers.find(data => ((data.idorder === ids) && (data.positioninjob === 'Кузнец')));
@@ -106,7 +108,6 @@ const Orders = (props) => {
     const Sort = () => {
         let temp = [...Orders];
         temp.sort(compareNumbers);
-        console.log(temp)
         setOrders(temp)
     }
     const Field = () => Orders.map(eachOrder);

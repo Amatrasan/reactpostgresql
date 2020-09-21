@@ -32,6 +32,8 @@ const showSmithy = (i, data, FetchData, setModify, setName, setCost, setOpen, op
     )
 };
 
+let timer
+
 const Delivery = () => {
     const [data, setData] = useState([]);
     const [name, setName] = useState('');
@@ -47,7 +49,8 @@ const Delivery = () => {
             ).catch((err) => {});
     }
     useEffect(() => {
-        setInterval(FetchData, 1000);
+        timer = setInterval(FetchData, 5000);
+        return () => clearInterval(timer)
     }, []);
     const createNewSmithy = () => {
         setOpen(!openState);

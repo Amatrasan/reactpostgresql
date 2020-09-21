@@ -42,7 +42,7 @@ module.exports = {
         try {
             console.log('select start')
             const response = await db.manyOrNone(`SELECT ${columns} FROM ${tables} ${t}`);
-            console.log('select end', response)
+            // console.log('select end', response)
             resolve(response);
         } catch (error) {
             console.log('select error', error)

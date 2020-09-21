@@ -5,7 +5,7 @@ const postgree = require('../systems/postgree');
 
 router.use(bodyParser.json({
     extendet: true,
-    limit: '50mb',
+    limit: '150mb',
     type: 'text/json',
 }));
 router.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
@@ -32,7 +32,7 @@ router.post('/any', async (req, res) => {
 router.post('/select', async (req, res) => {
     console.log('res start')
     const response = await postgree.select(req.body.columns, req.body.tables, req.body.cond);
-    console.log('res end', response)
+    // console.log('res end', response)
     if (!response) {
         return res.json({ result: false, title: 'Получение данных.', message: 'Данные не найдены' });
     }
