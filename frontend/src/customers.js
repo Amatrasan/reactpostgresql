@@ -61,7 +61,7 @@ const Customers = () => {
             ).catch((err) => {});
     };
     useEffect(() => {
-        timer = setInterval(FetchData, 5000);
+        timer = setInterval(FetchData, 2000);
         return () => clearInterval(timer)
     }, []);
     const createNewWorker = () => {

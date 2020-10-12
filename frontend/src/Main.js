@@ -29,7 +29,7 @@ const Menu = (props) => {
     };
     useEffect(() => {
        // getHistory();
-       let g = setInterval(getHistory, 5000);
+       let g = setInterval(getHistory, 2000);
        return () => clearInterval(g);
     }, []);
     const showHistory = (all) => {

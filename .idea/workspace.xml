@@ -21,22 +21,13 @@
   <component name="ChangeListManager">
     <list default="true" id="32e53871-2e3f-4545-b960-657771626990" name="Default Changelist" comment="Что то">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/routes/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/startup/express.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/startup/express.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/systems/postgree.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/systems/postgree.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dump_postgres_finish — копия.sql" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dump_postgres_finish.sql" beforeDir="false" afterPath="$PROJECT_DIR$/dump_postgres_finish.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/Manager/Contracts.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Manager/Contracts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/Manager/manager.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Manager/manager.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/customers.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/customers.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/delivery.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/delivery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/employes.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/employes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/landing.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/landing.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/metal.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/metal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/order.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/order.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/smithys.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/smithys.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/style/all.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/style/all.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,6 +129,14 @@
       <workItem from="1584351575848" duration="22976000" />
       <workItem from="1600700953131" duration="10062000" />
       <workItem from="1600713106890" duration="123000" />
+      <workItem from="1600715077751" duration="242000" />
+      <workItem from="1600715335663" duration="87000" />
+      <workItem from="1600716185109" duration="479000" />
+      <workItem from="1600716855737" duration="194000" />
+      <workItem from="1600757488098" duration="12000" />
+      <workItem from="1600872809463" duration="1193000" />
+      <workItem from="1600874113073" duration="818000" />
+      <workItem from="1600952512562" duration="2542000" />
     </task>
     <servers />
   </component>
@@ -161,10 +160,14 @@
     <option name="LAST_COMMIT_MESSAGE" value="Что то" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="478" y="145" width="788" height="534" key="find.popup" timestamp="1600712249779">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1600757497801">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="478" y="145" width="788" height="534" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1600712249779" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1600757497801" />
+    <state x="478" y="145" width="788" height="534" key="find.popup" timestamp="1600953541605">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="478" y="145" width="788" height="534" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1600953541605" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1600712217181">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
